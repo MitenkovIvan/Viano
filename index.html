@@ -1,1 +1,35 @@
-<center><body bgcolor=#><font face="Arial"><mark style="background:#FFF"><a onclick=k(1)>C</a><mark style="background:#000"><font color=#FFF><a onclick=k(1,1)>C#</a></font></mark><a onclick=k(2)>D</a><mark style="background:#000"><font color=#FFF><a onclick=k(2,1)>D#</a></font></mark><a onclick=k(3)>E</a><a onclick=k(4)>F</a><mark style="background:#000"><font color=#FFF><a onclick=k(4,1)>F#</a></font></mark><a onclick=k(5)>G</a><mark style="background:#000"><font color=#FFF><a onclick=k(5,1)>G#</a></font></mark><a onclick=k(6)>A</a><mark style="background:#000"><font color=#FFF><a onclick=k(6,1)>A#</a></font></mark><a onclick=k(7)>B</a><a onclick=k(8)>C</a><mark style="background:#000"><font color=#FFF><a onclick=k(8,1)>C#</a></font></mark><a onclick=k(9)>D</a><mark style="background:#000"><font color=#FFF><a onclick=k(9,1)>D#</a></font></mark><a onclick=k(0)>E</a></mark></font><br><video controls src="video.mp4"height=95%width=95% id=v><script>function k(n,o=0){v.currentTime=v.duration/10*(n+(.5*o))+.5*o}onkeydown=function(n){if(n.key!==" "){v.currentTime=v.duration/10*n.key}}</script>
+<center>
+	<body bgcolor=#>
+		<font face="Arial">
+			<table bgcolor=#FFF>
+				<tr>
+					<th onclick=k(1)>C<br><font color=#FF0000>1</th>
+					<th onclick=k(1,1) bgcolor=#><font color=#FFF>C#</font><br>.</th>
+					<th onclick=k(2)>D<br><font color=#FF0000>2</th>
+					<th onclick=k(2,1) bgcolor=#><font color=#FFF>D#</font><br>.</th>
+					<th onclick=k(3)>E<br><font color=#FF0000>3</th>
+					<th onclick=k(4)>F<br><font color=#FF0000>4</th>
+					<th onclick=k(4,1) bgcolor=#><font color=#FFF>F#</font><br>.</th>
+					<th onclick=k(5)>G<br><font color=#FF0000>5</th>
+					<th onclick=k(5,1) bgcolor=#><font color=#FFF>G#</font><br>.</th>
+					<th onclick=k(6)>A<br><font color=#FF0000>6</th>
+					<th onclick=k(6,1) bgcolor=#><font color=#FFF>A#</font><br>.</th>
+					<th onclick=k(7)>B<br><font color=#FF0000>7</th>
+					<th onclick=k(8)>C<br><font color=#FF0000>8</th>
+					<th onclick=k(8,1) bgcolor=#><font color=#FFF>C#</font><br>.</th>
+					<th onclick=k(9)>D<br><font color=#FF0000>9</th>
+					<th onclick=k(9,1) bgcolor=#><font color=#FFF>D#</font><br>.</th>
+					<th onclick=k(0)>E<br><font color=#FF0000>0</th>
+				</tr>
+			</table>
+				<font size=0>
+					<br>
+				</font>
+			<video controls src="video.mp4"height=90%width=90% id=v></video>
+		    <script>
+				function k(n,o=0){v.currentTime=v.duration/10*(n+(.5*o))+.5*o}
+				onkeydown=function(n){if(n.key!==" "){v.currentTime=v.duration/10*n.key}}
+			</script>
+		</font>
+	</body>
+</center>

@@ -28,7 +28,12 @@
 			<video controls src="video.mp4"height=90%width=90% id=v></video>
 		    <script>
 				function k(n,o=0){v.currentTime=v.duration/10*(n+(.5*o))+.5*o}
-				onkeydown=function(n){if(n.key!==" "){v.currentTime=v.duration/10*n.key}}
+				onkeydown=function(n){
+					if(n.key=="j"){v.currentTime-=10}  // J to skip backward by 10 seconds
+					else if(n.key=="k"){v.paused?v.play():v.pause()}  // K to play/pause
+					else if(n.key=="l"){v.currentTime+=10}  // L to skip forward by 10 seconds
+					else if(n.key!==" "){v.currentTime=v.duration/10*n.key}  // Number keys (0-9)
+				}
 			</script>
 		</font>
 	</body>
